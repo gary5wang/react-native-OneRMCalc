@@ -7,44 +7,39 @@ var Style = StyleSheet.create({
     },
 
     inputContainer: {
-        flex: 4,
-        backgroundColor: 'skyblue'
+        flex: 4
     },
 
     inputValue: {
         textAlign: 'center',
-        height: 150,
-        width: 200,
-        fontSize: 22,
-        borderColor: 'gray',
-        borderWidth: 1
-    },
-
-    maxValue: {
-        height: 150,
-        width: 200,
-        marginTop: 60,
-        fontSize: 22,
-        textAlign: 'center'
-    },
-
-    inputButton: {
         flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
-        borderWidth: 0.5,
-        borderColor: 'darkblue'
+        fontSize: 40
     },
 
     inputButtonText: {
-        fontSize: 22,
-        fontWeight: 'bold',
+        fontSize: 30,
         color: 'black'
+    },
+
+    button: {
+        fontSize: 20,
+        color: 'white'
+    },
+
+    buttonContainer: {
+        flex: 1,
+        padding: 10,
+        height: 45,
+        overflow: 'hidden',
+        borderRadius: 4,
+        backgroundColor: 'blue'
     },
 
     inputRow: {
         flex: 1,
-    }
+        padding: 5
+    },
+
 });
 
 export default Style;
