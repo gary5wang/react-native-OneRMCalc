@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Button from 'react-native-button';
-import InputButton from './InputButton';
 import Style from './Style';
 import {
 	Alert,

@@ -29,7 +29,6 @@ var Style = StyleSheet.create({
     buttonContainer: {
         flex: 1,
         padding: 10,
-        height: 45,
         overflow: 'hidden',
         borderRadius: 4,
         backgroundColor: 'blue'
