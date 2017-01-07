@@ -11,7 +11,7 @@ import {
     AppRegistry
 } from 'react-native';
 
-	const inputButtons = [2,3,4,5,6,7,8,9,10];
+const inputButtons = [2,3,4,5,6,7,8,9,10];
 
 class OneRMCalc extends Component {
 
@@ -28,7 +28,8 @@ class OneRMCalc extends Component {
      			<View style={{flex: 1}}>
 				    <TextInput
 				        style={Style.inputValue}
-				        keyboardType='numeric'
+				        keyboardType='decimal-pad'
+                        showDoneButton='true'
 				        onFocus= {() => this.setState({inputValue : ''})}
 				        onChangeText={(inputValue) => this.setState({inputValue})}
 				        value={this.state.inputValue}

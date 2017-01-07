@@ -1,0 +1,17 @@
+RCT_CUSTOM_VIEW_PROPERTY(showDoneButton, BOOL, RCTTextField)
+{
+  if (json && ([RCTConvert BOOL:json])) {
+    UIToolbar* toolbar = [[UIToolbar alloc] init];
+    [toolbar sizeToFit];
+    UIBarButtonItem* flex = [[UIBarButtonItem alloc]
+                             initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
+                             target:nil action:nil];
+    UIBarButtonItem* doneButton = [[UIBarButtonItem alloc]
+                                   initWithBarButtonSystemItem:UIBarButtonSystemItemDone
+                                   target:view action:@selector(endEditing:)];
+    toolbar.items = @[flex, doneButton];
+    view.inputAccessoryView = toolbar;
+  } else {
+    view.inputAccessoryView = nil;
+  }
+}

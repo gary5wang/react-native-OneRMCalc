@@ -23,8 +23,7 @@ var Style = StyleSheet.create({
 
     button: {
         fontSize: 20,
-        color: 'white',
-        text-shadow: -2px, 2px, #346392
+        color: 'white'
     },
 
     buttonContainer: {
