@@ -6,6 +6,17 @@ var Style = StyleSheet.create({
         flex: 1
     },
 
+    helpContainer: {
+        height: 30,
+        width: 30,
+        marginTop: 20,
+        marginRight: 5,
+        overflow: 'hidden',
+        borderRadius: 15,
+        borderWidth: 3,
+        borderColor: 'blue'
+    },
+
     inputContainer: {
         flex: 4
     },
@@ -18,6 +29,11 @@ var Style = StyleSheet.create({
 
     inputButtonText: {
         fontSize: 30,
+        color: 'black'
+    },
+
+    helpButton: {
+        fontSize: 20,
         color: 'black'
     },
 

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Button from 'react-native-button';
 import Style from './Style';
+import AdMobBanner from 'react-native-admob';
 import {
 	Alert,
 	Text,
@@ -11,6 +12,12 @@ import {
 } from 'react-native';
 
 const inputButtons = [2,3,4,5,6,7,8,9,10];
+
+
+const onHelpButtonPress = () => {
+   Alert.alert('Enter a weight below that you can do X number of reps with,'
+    + ' then click on X reps to find your 1 rep max');
+};
 
 class OneRMCalc extends Component {
 
@@ -25,6 +32,14 @@ class OneRMCalc extends Component {
 	    return (
 	    	<View style={Style.rootContainer}>
      			<View style={{flex: 1}}>
+                <View style={{flexDirection: 'row', justifyContent: 'flex-end'}}>
+                    <Button 
+                        containerStyle={Style.helpContainer}
+                        style={Style.helpButton}
+                        onPress={onHelpButtonPress}>
+                    ?
+                    </Button>
+                </View>
 				    <TextInput
 				        style={Style.inputValue}
 				        keyboardType='decimal-pad'
