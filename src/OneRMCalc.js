@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Button from 'react-native-button';
+import LinearGradient from 'react-native-linear-gradient';
 import Style from './Style';
-import AdMobBanner from 'react-native-admob';
 import {
 	Alert,
 	Text,
@@ -67,7 +67,7 @@ class OneRMCalc extends Component {
     					highlight={this.state.selectedSymbol === input}
                         onPress={this._handleInput.bind(this, input)}
                         key={r}>
-                        {input} reps
+                        {input} Reps
                         </Button>
             views.push(
             	<View style={Style.inputRow}

@@ -24,7 +24,8 @@ var Style = StyleSheet.create({
     inputValue: {
         textAlign: 'center',
         flex: 1,
-        fontSize: 40
+        fontSize: 40,
+        fontFamily: 'AvenirNext-Medium'
     },
 
     inputButtonText: {
@@ -39,20 +40,21 @@ var Style = StyleSheet.create({
 
     button: {
         fontSize: 20,
-        color: 'white'
+        color: 'white',
+        fontFamily: 'AvenirNext-Bold'
     },
 
     buttonContainer: {
         flex: 1,
-        padding: 10,
+        padding: 12,
         overflow: 'hidden',
-        borderRadius: 4,
+        borderRadius: 20,
         backgroundColor: 'blue'
     },
 
     inputRow: {
         flex: 1,
-        padding: 5
+        padding: 2
     },
 
 });
