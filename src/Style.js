@@ -46,10 +46,9 @@ var Style = StyleSheet.create({
 
     buttonContainer: {
         flex: 1,
-        padding: 12,
+        padding: 15,
         overflow: 'hidden',
-        borderRadius: 20,
-        backgroundColor: 'blue'
+        borderRadius: 20
     },
 
     inputRow: {

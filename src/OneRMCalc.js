@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Button from 'react-native-button';
-import LinearGradient from 'react-native-linear-gradient';
 import Style from './Style';
 import {
 	Alert,
@@ -62,7 +61,7 @@ class OneRMCalc extends Component {
         for (var r = 0; r < inputButtons.length; r ++) {
         	let input = inputButtons[r];
             let row = <Button 
-            			containerStyle={Style.buttonContainer}
+            			containerStyle={[Style.buttonContainer, this._getBackgroundColor(r)]}
     					style={Style.button}
     					highlight={this.state.selectedSymbol === input}
                         onPress={this._handleInput.bind(this, input)}
@@ -74,6 +73,21 @@ class OneRMCalc extends Component {
             			key={"row-" + r}>{row}</View>)
         }
         return views;
+    }
+
+
+    _getBackgroundColor(index) {
+        var color = '#0000'
+        var blueIndex = this._getBlueFromIndex(index)
+        color += blueIndex
+        return {
+            backgroundColor: color
+        };
+    }
+
+    _getBlueFromIndex(d) {
+        var temp = 240 - (15*d)
+        return  ("0"+(Number(temp).toString(16))).slice(-2).toUpperCase()
     }
 
     _handleInput(reps) {
