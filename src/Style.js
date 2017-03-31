@@ -15,7 +15,7 @@ var Style = StyleSheet.create({
         overflow: 'hidden',
         borderRadius: 15,
         borderWidth: 3,
-        borderColor: 'blue'
+        borderColor: '#1976D2'
     },
 
     inputContainer: {
