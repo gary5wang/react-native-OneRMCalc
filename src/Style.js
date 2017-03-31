@@ -3,7 +3,8 @@ import { StyleSheet } from 'react-native';
 var Style = StyleSheet.create({
 
     rootContainer: {
-        flex: 1
+        flex: 1,
+        backgroundColor: '#E1F5FE'
     },
 
     helpContainer: {
@@ -22,6 +23,7 @@ var Style = StyleSheet.create({
     },
 
     inputValue: {
+        color: '#1A237E',
         textAlign: 'center',
         flex: 1,
         fontSize: 40,
@@ -30,12 +32,12 @@ var Style = StyleSheet.create({
 
     inputButtonText: {
         fontSize: 30,
-        color: 'black'
+        color: 'white'
     },
 
     helpButton: {
         fontSize: 20,
-        color: 'black'
+        color: '#1A237E'
     },
 
     button: {

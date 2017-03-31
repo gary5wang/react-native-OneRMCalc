@@ -77,7 +77,7 @@ class OneRMCalc extends Component {
 
 
     _getBackgroundColor(index) {
-        var color = '#0000'
+        var color = '#2979'
         var blueIndex = this._getBlueFromIndex(index)
         color += blueIndex
         return {
